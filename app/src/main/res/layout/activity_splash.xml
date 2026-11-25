@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_logo"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="M"
+        android:textColor="@color/cream"
+        android:textSize="56sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/Montra.Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.15"
+        android:text="MONTRA"
+        android:textSize="28sp" />
+
+    <TextView
+        style="@style/Montra.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Track • Manage • Grow" />
+
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="48dp"
+        android:indeterminateTint="@color/red" />
+
+    <TextView
+        style="@style/Montra.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Loading..." />
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/Montra.Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expenses" />
+
+        <TextView
+            style="@style/Montra.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Amount" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            style="@style/Montra.Input"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:hint="Enter amount (₱)"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/Montra.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Category" />
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_spinner"
+            android:popupBackground="@color/cream" />
+
+        <TextView
+            style="@style/Montra.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/Montra.Input"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical" />
+
+        <TextView
+            style="@style/Montra.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Payment Method" />
+
+        <Spinner
+            android:id="@+id/spPayment"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_spinner"
+            android:popupBackground="@color/cream" />
+
+        <TextView
+            style="@style/Montra.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/etDesc"
+            style="@style/Montra.Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:hint="Add a note (optional)"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            style="@style/Montra.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Receipt (optional)" />
+
+        <LinearLayout
+            android:id="@+id/boxReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_dashed"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReceipt"
+                style="@style/Montra.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Receipt" />
+
+            <TextView
+                style="@style/Montra.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to choose a file" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@style/Montra.Button"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:text="Save Expense" />
+    </LinearLayout>
+</ScrollView>

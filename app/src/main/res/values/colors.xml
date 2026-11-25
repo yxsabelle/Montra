@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream">#FFF8E7</color>
+    <color name="white">#FFF8E7</color>
+    <color name="beige">#F3E3C3</color>
+    <color name="beige_dark">#E2CBA3</color>
+    <color name="red">#C62828</color>
+    <color name="red_dark">#A31F1F</color>
+    <color name="text_dark">#3B1010</color>
+    <color name="text_gray">#8A5A4A</color>
+    <color name="dot_inactive">#E2CBA3</color>
+</resources>
